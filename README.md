@@ -1,34 +1,15 @@
-Royal Smiles – Kids Friendly Website
+# 1. initialize a git repo
+git init
 
-A progressive web app (PWA) for Royal Smiles Dental Care built to educate, engage, and delight kids and parents about oral health.
+# 2. add your GitHub repo as remote
+git remote add origin https://github.com/JahmielTee/royalsmiles.git
 
-🌟 Features
-	•	Modern Homepage with sky-blue + gold kid-friendly theme
-	•	Kids Game – “Brush Time Challenge” to teach brushing habits
-	•	Dental Resource Library – free PDF guides and tips
-	•	Interactive Chatbot – answers FAQs and helps parents/kids navigate the site
-	•	PWA – installable on mobile, offline caching, and app-like experience
+# 3. add all files
+git add .
 
-🗂 Structure
-	•	index.html – Homepage
-	•	kids-game.html – Mini game
-	•	resources.html – Downloadable guides
-	•	style.css – Sitewide styles
-	•	chatbot.js – Chatbot front-end logic
-	•	manifest.json + service-worker.js – PWA setup
+# 4. commit
+git commit -m "Deploy Royal Smiles Kids Friendly site"
 
-🚀 Deployment
-
-This repo is ready for GitHub Pages.
-	1.	Push the code to the main branch.
-	2.	In your repo Settings → Pages, choose “Deploy from branch” and select main and / (root).
-	3.	Your site will be live at https://<your-username>.github.io/royalsmiles/.
-
-🔧 Customization
-	•	Replace placeholder images in /images/ and PDFs in /pdfs/ with your real content.
-	•	Edit chatbot.js to customize FAQ answers or integrate with a back-end AI API.
-	•	Update colors or text in style.css for branding tweaks.
-
-📄 License
-
-This project is for Royal Smiles Dental Care internal use.
+# 5. push to main branch (force if needed)
+git branch -M main
+git push -u origin main
